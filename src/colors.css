@@ -1,0 +1,31 @@
+/** Text **/
+
+.blueGray {
+  color: #8486a9;
+}
+
+.redSoft {
+  color: #fb6087;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/** Background **/
+
+.blueMedium {
+  background-color: #343650;
+}
+
+.blueDark {
+  background-color: #2c2c44;
+}
+
+.blueDarker {
+  background-color: #1e1f29;
+}
+
+.blueDarkest {
+  background-color: #191a24;
+}

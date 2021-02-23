@@ -4,8 +4,110 @@
     url(./fonts/RedHatText-Medium.ttf) format("truetype");
 }
 
+@import "colors.css";
+
 body {
   font-family: RedHatText-Medium;
   font-size: 14px;
   font-weight: 700px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#hills {
+  background-image: url(./assets/images/pattern-hills.svg);
+  background-size: center;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#stars {
+  background-image: url(./assets/images/bg-stars.svg);
+  background-size: cover;
+  background-color: #191a24;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+#innerContent {
+  margin: 20vh auto 0px auto;
+  width: 100%;
+  max-width: 70%;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 20;
+}
+
+.leadText {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  letter-spacing: 0.4em;
+}
+
+.countdownBox {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px;
+}
+
+.countdownBoxTop {
+  height: 50px;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 2px;
+}
+
+.countdownBoxBottom {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.countdownNumber {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  margin-top: -34px;
+}
+
+.countdownBoxLabel {
+  text-align: center;
+}
+
+.countdownBoxLabelWrap {
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.countdownBoxLabel {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.3em;
 }
