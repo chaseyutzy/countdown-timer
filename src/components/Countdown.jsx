@@ -1,16 +1,29 @@
 import React from "react";
+import PropTypes from "prop-types";
 import CountdownBox from "./CountdownBox";
 
-const Countdown = () => {
+const Countdown = ({ ticker }) => {
   return (
     <div className="countdownWrap">
       <h2 className="leadText white">WE&apos;RE LAUNCHING SOON</h2>
-      <CountdownBox key="countdown-box-1" number={8} label="days" />
-      <CountdownBox key="countdown-box-2" number={23} label="hours" />
-      <CountdownBox key="countdown-box-3" number={55} label="minutes" />
-      <CountdownBox key="countdown-box-4" number={41} label="seconds" />
+      <CountdownBox key="countdown-box-1" number={ticker.days} label="days" />
+      <CountdownBox key="countdown-box-2" number={ticker.hours} label="hours" />
+      <CountdownBox
+        key="countdown-box-3"
+        number={ticker.minutes}
+        label="minutes"
+      />
+      <CountdownBox
+        key="countdown-box-4"
+        number={ticker.seconds}
+        label="seconds"
+      />
     </div>
   );
+};
+
+CountdownBox.propTypes = {
+  ticker: PropTypes.object,
 };
 
 export default Countdown;
