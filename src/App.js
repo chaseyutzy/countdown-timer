@@ -13,24 +13,23 @@ const App = () => {
       </div>
       <div id="socialWrap">
         <div id="socialWrapInner">
-          <img
-            src={FBIcon}
-            onClick={() => console.log("FB")}
+          <a href="https://facebook.com" target="_blank" className="socialIcon">
+            <img src={FBIcon} alt="Facebook site" />
+          </a>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
             className="socialIcon"
-            alt="Facebook site"
-          />
-          <img
-            src={PinterestIcon}
-            onClick={() => console.log("Pinterest")}
+          >
+            <img src={PinterestIcon} alt="Pinterest site" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
             className="socialIcon"
-            alt="Pinterest site"
-          />
-          <img
-            src={InstaIcon}
-            onClick={() => console.log("Instagram")}
-            className="socialIcon"
-            alt="Instagram site"
-          />
+          >
+            <img src={InstaIcon} alt="Instagram site" />
+          </a>
         </div>
       </div>
     </div>
