@@ -17,7 +17,7 @@ body {
 
 #hills {
   background-image: url(./assets/images/pattern-hills.svg);
-  background-size: center;
+  background-size: cover;
   width: 100%;
   height: 20%;
   position: absolute;
@@ -28,7 +28,7 @@ body {
 
 #stars {
   background-image: url(./assets/images/bg-stars.svg);
-  background-size: cover;
+  background-size: center;
   background-color: #191a24;
   width: 100%;
   height: 100%;
@@ -110,4 +110,33 @@ h1 {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 0.3em;
+}
+
+#socialWrap {
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  z-index: 20;
+  display: block;
+  bottom: 5vh;
+  margin: 0px auto;
+}
+
+#socialWrapInner {
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  width: 132px;
+}
+
+.socialIcon {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.socialIcon:hover {
+  opacity: 0.5;
 }
